@@ -150,8 +150,9 @@ def part1_ai(root, data):
             print("성공적으로 분석이 완료되었습니다.")
         else:
             print("분석실패")
-            button1 = tk.Button(root, text="다시 요청하기", command=retry)
-            button1.pack()
+            part3_main(root, dummyData)
+            # button1 = tk.Button(root, text="다시 요청하기", command=retry)
+            # button1.pack()
 
      # 3초 뒤 결과 확인 (API 요청이 비동기라 잠시 기다림)
     root.after(3000, check_result)
